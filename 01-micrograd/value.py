@@ -56,10 +56,3 @@ class Value:
         visit(self)
         for node in reversed(ts):
             node._backward()
-
-    """
-    TODO: implement pow for value class
-    def pow(self, other):
-        out = Value(self.data**other.data, (self, other), "**")
-        return out
-    """
